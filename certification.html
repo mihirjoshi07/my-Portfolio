@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+        <title>About Me</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="about.css">        <!-- This page Link -->
+
+        <style>
+            img{
+                width: 100%;
+                height: auto;
+                max-width: 700px;
+            }
+            .carousel-container {
+                position: relative;
+                
+                margin: 0 auto;
+            }
+    
+            .carousel-image {
+                display: none;
+            }
+    
+            .carousel-image.active {
+                display: block;
+            }
+    
+            .carousel-button {
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+
+            #head{
+                padding: 0%;
+                margin: 0%;
+            }
+            @media (max-width: 420px) {
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+}
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a  id="cer" href="index.html" class="logo">My Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links" >
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Me</a></li>
+							<li class="active"><a href="certification.html">Certifications</a></li>							
+							<li><a href="contact.html">Contact Me</a></li>
+						</ul>
+
+						
+						<ul class="icons">
+							<li><a href="mailto:mihirjoshi04@gmail.com" class="fa fa-envelope-o" style="font-size:24px"><span class="label"></span></a></li>
+
+							<li><a href="https://www.linkedin.com/in/mihirjoshi04" class="icon brands fa-linkedin"><span class="label">Linked In</span></a></li>
+							<li><a href="https://github.com/mihirjoshi07" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+                            
+                                <h1  style="text-align: center; color:darkslateblue;"><u>Certifications</u>
+                         <!-- inner border -->
+               
+    <div class="carousel-container">
+        <button class="carousel-button" onclick="prevImage()">Previous</button>
+        <button class="carousel-button" onclick="nextImage()">Next</button>
+        <center>
+            
+        <img class="carousel-image active" src="./images/agile.png" height="400" width="500" alt="Image 1">
+        <img class="carousel-image" src="./images/rest.png" height="400" width="500" alt="Image 2">
+        <img class="carousel-image" src="./images/javascript.png" height="400" width="500" alt="Image 3">
+        <img class="carousel-image" src="./images/python.png" height="400" width="500" alt="Image 2">
+        <img class="carousel-image" src="./images/git.png" height="400" width="500" alt="Image 3">
+        <img class="carousel-image" src="./images/sql.png" height="400" width="500" alt="Image 2">
+        <img class="carousel-image" src="./images/branches.png" height="400" width="500" alt="Image 3">
+        </center>
+       
+    </div>
+  <!-- main carosul -->
+                     
+       
+                     <!-- main -->
+					</div>
+
+			
+			
+				<!-- Copyright -->
+						<div id="copyright">
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="mailto:mihirjoshi04@gmail.com" class="icon fa  fa-envelope" style="font-size:24px"><span class="label"></span></a></li>
+									<li><a href="https://www.linkedin.com/in/mihirjoshi04"  class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/mihirjoshi07" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section><br>
+							<ul><li>&copy; Copy Right Reserved 2023</li><li>Mihir Joshi</a></li></ul>
+						</div>
+
+			</div>
+            <script>
+                let currentImageIndex = 0;
+                const images = document.querySelectorAll('.carousel-image');
+                
+               
+                function showImage(index) {
+                    images[currentImageIndex].classList.remove('active');
+                    currentImageIndex = index;
+                    images[currentImageIndex].classList.add('active');
+                }
+        
+                function nextImage() {
+                    const newIndex = (currentImageIndex + 1) % images.length;
+                    showImage(newIndex);
+                    nextText()
+                    
+                }
+        
+                function prevImage() {
+                    const newIndex = (currentImageIndex - 1 + images.length) % images.length;
+                    showImage(newIndex);
+                    prevText();
+                }
+            </script>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+                
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+                
+
+	</body>
+</html>
