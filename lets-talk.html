@@ -49,15 +49,48 @@
                                     <a  href="index.html#projects"><button type="button" class="btn btn-info">Back to all Projects</button></a>
                                    
                                     <br><br>
-                                    <h1>Let's Talk</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+                                    <h1>Mihir's Blog</h1>
+									<p>
+										Mihir's blog is an online platform that allows users to create accounts and log
+										 in to the application. Once logged in, users have the ability to post their own content.
+										  This includes the ability to create new blog posts, edit their own posts (subject to proper authorization),
+										   and view posts authored by other users.
+									</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
-                                <a  href="index.html#projects"><button type="button" class="btn btn-info">Back to all Projects</button></a>
+								<div class="image main"><img src="images/blog/home1.png" alt="" /></div>
+								<p>Welcome to the main page of Mihir's Blog, where you'll find an existing post titled "iPhone '15," authored by a user named "test." The homepage is a hub for a diverse array of posts contributed by various users.</p>
+								<p>Here, you can explore a chronological list of posts, each clearly attributed to its respective author, providing insight into the wealth of perspectives within the Mihir's Blog community.</p>
+								<p>In addition to the posts, you'll find two essential options on the homepage:</p>
+								<p>Register: If you're new to Mihir's Blog and eager to become a member, simply click on the "Register" button. This will initiate the registration process, allowing you to create a personalized account with a unique username and password.
+									<br>Login: For those who have already registered, the "Login" button grants access to the platform using your registered credentials. Logging in empowers you to contribute your own posts, modify them (with appropriate authorization), and engage with the content posted by other users.
+
+								</p>
+							
+
+								<div class="image main"><img src="images/blog/register.png" alt="" /></div>
+								<p>Let's initiate the user registration process by creating a new user account. We've defined the username and password for this user as "admin." Simply click the "Register" button to save this user's information into our MongoDB database.</p>
+								
+								<div class="image main"><img src="images/blog/register-success.png" alt="" /></div>
+								<p>
+									Let's take a look at the backend infrastructure, which relies on MongoDB Atlas, a cloud-based web application for MongoDB. Additionally, for security purposes, we've implemented the bcrypt library to encrypt user passwords. This library is capable of hashing and salting passwords to generate a randomized, secure, and encrypted password for each user.</p>
+									<div class="image main"><img src="images/blog/db.png" alt="" /></div>
+
+									
+									<p>After successfully registering a user, let's proceed to log in using the same username and password in order to access the blog page.</p>
+									<div class="image main"><img src="images/blog/login.png" alt="" /></div>
+									<div class="image main"><img src="images/blog/login-succes.png" alt="" /></div>
+									<p>Once you've successfully logged in, you'll notice two options at the top: "Create Post" and "Logout." With these options available, you can now create new posts and edit existing ones, provided you have the proper authorization. This grants you the ability to actively contribute to the blog and manage your content as you see fit.</p>
+									
+									<div class="image main"><img src="images/blog/create.png" alt="" /></div>
+									<div class="image main"><img src="images/blog/create-success.png" alt="" /></div>
+									<p>"Having created a post as the admin user, it's now possible to edit posts that belong to a specific user. For instance, if we log in as another user named 'test,' we can then update the post about the Apple iPhone."</p>
+									<div class="image main"><img src="images/blog/edit.png" alt="" /></div>
+									<div class="image main"><img src="images/blog/new-title.png" alt="" /></div>
+									<div class="image main"><img src="images/blog/eidted.png" alt="" /></div>
+									<p>Great, you've successfully edited the title of the post to "APPLE." To continue, let's log out from the "test" user account and view the dashboard or homepage. Logging out will allow us to see the changes made to the post title and navigate through the application without an active user session.</p>
+									<div class="image main"><img src="images/blog/end.png" alt="" /></div>
+									
+									<a  href="index.html#projects"><button type="button" class="btn btn-info">Back to all Projects</button></a>
 
                             </section>
                             
